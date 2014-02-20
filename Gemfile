@@ -9,6 +9,9 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'figaro'
 
+# geolocation
+gem 'geokit-rails'
+
 
 group :development, :test do
   gem "rspec-rails"
