@@ -1,4 +1,5 @@
 class FoodFinder
+  include Yelp::V2::Search::Request
   attr_accessor :location_and_type_hash, :food
 
   def initialize(location_and_type_hash, food)
@@ -10,12 +11,17 @@ class FoodFinder
     Yelp::Base.client
   end
 
-  def request
+  def food_and_location_request
+    GeoPoint.new(:term => @food, :latitude => location_and_type_hash[:latitude], :longitude => location_and_type_hash[:longitude], :radius => 2)
   end
 
-#   <!--  request = GeoPoint.new(:term => 'tacos', :latitude => 47.623, :longitude => -122.3209) 
-# closest = response['businesses'].map {|business| [business['distance'], business['name'], business['location']['display_address'].join(" ")] }.sort.first
-# -->
+  def yelp_response
+    client.search(food_and_location_request)['businesses'].sort_by { |business, distance| business['distance'] }
+  end
+
+  def closest
+    yelp_response.first
+  end
 
 
 end

@@ -6,12 +6,11 @@ $(document).ready(function(){
     {
     if (navigator.geolocation)
       {
-         alert("hello");
-      navigator.geolocation.getCurrentPosition(findTaco);
+      navigator.geolocation.getCurrentPosition(findPosition);
       }
     else{x.innerHTML = "Geolocation is not supported by this browser.";}
     }
-  function findTaco(position)
+  function findPosition(position)
     {
     lat.innerHTML = "Latitude: " + position.coords.latitude;
     lon.innerHTML = 'Longitude:' + position.coords.longitude;
