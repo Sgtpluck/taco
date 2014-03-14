@@ -12,6 +12,11 @@ gem 'figaro'
 # geolocation
 gem 'geokit-rails'
 
+# yelp wrapper
+gem 'yelpster'
+# google places wrapper
+gem 'google_places'
+
 
 group :development, :test do
   gem "rspec-rails"
