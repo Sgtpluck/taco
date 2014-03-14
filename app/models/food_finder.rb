@@ -6,5 +6,9 @@ class FoodFinder
     @food = food
   end
 
+  def client
+    Yelp::Base.client
+  end
+
 
 end
