@@ -9,13 +9,9 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'figaro'
 
-# geolocation
-gem 'geokit-rails'
 
 # yelp wrapper
 gem 'yelpster'
-# google places wrapper
-gem 'google_places'
 
 
 group :development, :test do
