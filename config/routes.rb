@@ -3,7 +3,7 @@ TacoEmergency::Application.routes.draw do
 
   post '/', to: "welcome#index"
 
-  post '/taco', to: "food#taco"
+  post '/taco', to: "food#taco", as: :taco
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
