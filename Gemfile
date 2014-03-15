@@ -15,12 +15,14 @@ gem 'httparty'
 gem 'yelpster'
 
 
-group :development, :test do
+group :test do
   gem "rspec-rails"
   gem "guard-rspec"
   gem "terminal-notifier-guard"
   gem "factory_girl_rails"
   gem 'simplecov', :require => false
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
