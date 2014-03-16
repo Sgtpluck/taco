@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'figaro'
 gem 'httparty'
+gem 'rails_12factor'
 
 
 # yelp wrapper
