@@ -5,6 +5,7 @@ $(document).ready(function(){
     var lon = document.querySelector('.long');
     var lat = document.querySelector('.lat');
     var err = document.querySelector('.error');
+    var closest = document.querySelector('.closest');
     {
     if (navigator.geolocation)
       {
@@ -24,7 +25,8 @@ $(document).ready(function(){
             'longitude': position.coords.longitude
             },
         success: function (data) {
-          return data;
+          console.log(data)
+          closest.innerHTML = (data.name);
         }
       });
     }
