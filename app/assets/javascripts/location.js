@@ -26,9 +26,14 @@ $(document).ready(function(){
             },
         success: function (data) {
           console.log(data);
-          display_address = data.location.display_address.join(' ');
+          restaurant_location = data.location.display_address;
           closest.innerHTML = ("The closest tacos are at: " + data.name +
-                                "<br> They are located at " + display_address);
+                                "<br> They are located at " + restaurant_location.join(' ') +
+                                "<br> <a href='http://maps.google.com/?q&saddr=" +
+                                  position.coords.latitude + "," +
+                                  position.coords.longitude +
+                                  "&daddr=" + restaurant_location[0] + " " +
+                                  restaurant_location[3] + "&dirflg=w'> Walking directions </a>");
         }
       });
     }
@@ -38,5 +43,10 @@ $(document).ready(function(){
     }
   });
 });
+
+// maps.google.com/?q=47.6229592&-122.3084003
+// maps.google.com/?q&saddr=47.6229592,-122.3084003&daddr=216 26th ave s seattle wa 98144&dirflg=w
+
+// http://maps.google.com/?q=47.6229807,-122.30843209999998&daddr=219 Broadway E Seattle, WA 98102&dirflg=w
 
  
