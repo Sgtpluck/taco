@@ -22,7 +22,10 @@ $(document).ready(function(){
         data: {
             'latitude': position.coords.latitude,
             'longitude': position.coords.longitude
-            }
+            },
+        success: function (data) {
+          return data;
+        }
       });
     }
 
