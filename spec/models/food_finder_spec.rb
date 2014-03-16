@@ -3,7 +3,7 @@ include Yelp::V2::Search::Request
 
 describe FoodFinder do
   describe 'methods' do
-    let(:tacos) {FoodFinder.new({ lat: 47.622, long: -122.313 },
+    let(:tacos) {FoodFinder.new({ latitude: 47.622, longitude: -122.313 },
                                  'taco')}
   
     describe 'client' do
@@ -20,10 +20,10 @@ describe FoodFinder do
 
     describe 'sorted_response' do
       it 'should do something' do
-        # response = VCR.use_cassette 'taco' do
-        #    tacos.yelp_response
-        #  end
-        #  expect(response).to be_an_instance_of Array
+        response = VCR.use_cassette 'taco' do
+           tacos.yelp_response
+         end
+         expect(response).to be_an_instance_of Array
       end
     end
 
