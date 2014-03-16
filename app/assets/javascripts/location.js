@@ -25,8 +25,9 @@ $(document).ready(function(){
             'longitude': position.coords.longitude
             },
         success: function (data) {
-          console.log(data)
-          closest.innerHTML = (data.name);
+          console.log(data);
+          closest.innerHTML = ("The closest tacos are at: " + data.name +
+                                "<br> They are located at " + data.location.display_address.join(' '));
         }
       });
     }
