@@ -15,7 +15,7 @@ class FoodFinder
     GeoPoint.new(:term => @food, :latitude => location_and_type_hash[:latitude], :longitude => location_and_type_hash[:longitude], :radius => 2)
   end
 
-  def yelp_response
+  def sorted_yelp_response
     client.search(food_and_location_request)['businesses'].sort_by { |business, distance| business['distance'] }
   end
 

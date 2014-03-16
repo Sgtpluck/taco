@@ -18,12 +18,14 @@ describe FoodFinder do
       end
     end
 
-    describe 'sorted_response' do
-      it 'should do something' do
+    describe 'sorted_yelp_response' do
+      it 'should return an array and sort it by distance' do
         response = VCR.use_cassette 'taco' do
-           tacos.yelp_response
+           tacos.sorted_yelp_response
          end
+
          expect(response).to be_an_instance_of Array
+         expect(response.first['distance']).to be < response.last['distance']
       end
     end
 
