@@ -19,6 +19,7 @@ describe FoodFinder do
     end
 
     describe 'sorted_yelp_response' do
+
       it 'should return an array and sort it by distance' do
         response = VCR.use_cassette 'taco' do
            tacos.sorted_yelp_response
@@ -29,7 +30,18 @@ describe FoodFinder do
       end
     end
 
+    describe 'closest' do
+      it 'should return the first element of the sorted array' do
+        response = VCR.use_cassette 'taco' do
+           tacos.sorted_yelp_response
+         end
+        close_taco = VCR.use_cassette 'taco' do
+            tacos.closest
+          end
 
+        expect(close_taco).to eq response.first
+      end
+    end
   end
 end
 
