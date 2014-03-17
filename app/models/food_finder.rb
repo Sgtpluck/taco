@@ -22,6 +22,4 @@ class FoodFinder
   def closest
     sorted_yelp_response.first
   end
-
-
 end
