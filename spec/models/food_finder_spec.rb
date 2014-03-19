@@ -3,8 +3,9 @@ include Yelp::V2::Search::Request
 
 describe FoodFinder do
   describe 'methods' do
-    let(:tacos) {FoodFinder.new({ latitude: 47.622, longitude: -122.313 },
-                                 'taco')}
+    let(:tacos) {FoodFinder.new({ latitude: 47.622,
+                                  longitude: -122.313,
+                                  food: 'tacos' }) }
   
     describe 'client' do
       it 'should create a Yelp Client object' do
@@ -44,8 +45,3 @@ describe FoodFinder do
     end
   end
 end
-
- # response = client.search(request)
-#   <!--  request = GeoPoint.new(:term => 'tacos', :latitude => 47.623, :longitude => -122.3209) 
-# closest = response['businesses'].map {|business| [business['distance'], business['name'], business['location']['display_address'].join(" ")] }.sort.first
-# -->

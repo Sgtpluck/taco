@@ -1,10 +1,18 @@
 class FoodController < ApplicationController
 
-  def taco
-    @closest_taco = FoodFinder.new(params, 'taco').closest
+  # def taco
+  #   @closest_taco = FoodFinder.new(params, 'taco').closest
+
+  #   respond_to do |format|
+  #       format.json { render json: @closest_taco, status: :ok }
+  #   end
+  # end
+
+  def all_foods
+    @closest_food = FoodFinder.new(params).closest
 
     respond_to do |format|
-        format.json { render json: @closest_taco, status: :ok }
+        format.json { render json: @closest_food, status: :ok }
     end
   end
 

@@ -11,7 +11,7 @@ $(document).ready(function(){
       {
       navigator.geolocation.getCurrentPosition(findPosition);
       }
-    else{x.innerHTML = "Geolocation is not supported by this browser.";}
+    else{err.innerHTML = "Geolocation is not supported by this browser.";}
     }
   function findPosition(position) 
     {
@@ -22,7 +22,7 @@ $(document).ready(function(){
         url: url,
         data: {
             'latitude': position.coords.latitude,
-            'longitude': position.coords.longitude
+            'longitude': position.coords.longitude,
             },
         success: function (data) {
           console.log(data);

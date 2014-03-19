@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.yelp.com/v2/search?ll=47.622,-122.313&term=taco
+    uri: http://api.yelp.com/v2/search?ll=47.622,-122.313&term=tacos
     body:
       encoding: US-ASCII
       string: ''
@@ -14,9 +14,9 @@ http_interactions:
       User-Agent:
       - OAuth gem v0.4.7
       Authorization:
-      - OAuth oauth_consumer_key="r9FZmNoXglYYMTWNXrQTMg", oauth_nonce="BvPXwycW5Hy7z7aIqJWLlYJHq8iI4BADIg6apheTU",
-        oauth_signature="%2BqK9SYQgcAb85NuDkVnsnSHefQA%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1394948181", oauth_token="tfjSGC3vC0dj-FrnGtkRUoPRnbQ3pG6_",
+      - OAuth oauth_consumer_key="r9FZmNoXglYYMTWNXrQTMg", oauth_nonce="G6VsoUCFm5akHOiQVjJH6nJgODhOT63j5Ww7rX00",
+        oauth_signature="tPHKOlg50Gc28SNZ%2FeHSFdznlJs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1395196566", oauth_token="tfjSGC3vC0dj-FrnGtkRUoPRnbQ3pG6_",
         oauth_version="1.0"
   response:
     status:
@@ -24,17 +24,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 16 Mar 2014 05:36:22 GMT
+      - Wed, 19 Mar 2014 02:36:06 GMT
       Server:
       - Apache
       X-Node:
-      - web37, api_com
+      - web28, api_com
       Cache-Control:
       - private
       Set-Cookie:
-      - bse=8e622639624f72e060605a370d1184a3; Domain=.yelp.com; Path=/; HttpOnly
+      - bse=421d42c358475177b5ddfc88d6a49bd0; Domain=.yelp.com; Path=/; HttpOnly
       Content-Length:
-      - '28837'
+      - '28789'
       Vary:
       - User-Agent
       Content-Type:
@@ -45,12 +45,12 @@ http_interactions:
       - lb1
     body:
       encoding: UTF-8
-      string: '{"region": {"span": {"latitude_delta": 0.099023540000004573, "longitude_delta":
-        0.070499879999999848}, "center": {"latitude": 47.616312700000002, "longitude":
+      string: '{"region": {"span": {"latitude_delta": 0.094426200000000904, "longitude_delta":
+        0.070499879999999848}, "center": {"latitude": 47.614223000000003, "longitude":
         -122.3248081}}, "total": 281, "businesses": [{"is_claimed": true, "distance":
         639.32805197681603, "mobile_url": "http://m.yelp.com/biz/tacos-chukis-seattle",
         "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-        "review_count": 260, "name": "Tacos Chukis", "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/GXDinsm0OeuX2jJLukvUyQ/ms.jpg",
+        "review_count": 259, "name": "Tacos Chukis", "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/GXDinsm0OeuX2jJLukvUyQ/ms.jpg",
         "rating": 4.5, "url": "http://www.yelp.com/biz/tacos-chukis-seattle", "location":
         {"cross_streets": "John St \u0026 Olive Way", "city": "Seattle", "display_address":
         ["219 Broadway E", "(b/t John St \u0026 Olive Way)", "Capitol Hill", "Seattle,
@@ -110,21 +110,21 @@ http_interactions:
         St"], "state_code": "WA"}}, {"is_claimed": true, "distance": 2541.7420478971421,
         "mobile_url": "http://m.yelp.com/biz/los-agaves-seattle", "rating_img_url":
         "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-        "review_count": 73, "name": "Los Agaves", "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/mcgatUI7G-7X1CPr5HmtsA/ms.jpg",
+        "review_count": 74, "name": "Los Agaves", "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/KSStC86q6RcRnP3EItjDkQ/ms.jpg",
         "rating": 4.5, "url": "http://www.yelp.com/biz/los-agaves-seattle", "location":
         {"cross_streets": "Post Aly", "city": "Seattle", "display_address": ["1514
         Pike Pl", "Ste 7", "(b/t Post Aly)", "Downtown", "Seattle, WA 98101"], "neighborhoods":
         ["Downtown"], "postal_code": "98101", "country_code": "US", "address": ["1514
         Pike Pl", "Ste 7"], "state_code": "WA"}, "phone": "2065040202", "snippet_text":
-        "My favorite place to eat at when I am down by the market. I''ve always past
-        by this little restaurant many times and it was about a few months ago we
-        decided...", "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/pNEwpqo7y_EKRXZfd0QGVw/ms.jpg",
+        "You have to go. You have to do. Make the walk, the drive, whatever. I absolutely
+        love this place. I am in Seattle for a conference and I''ve eaten here three...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/pNEwpqo7y_EKRXZfd0QGVw/ms.jpg",
         "categories": [["Mexican", "mexican"]], "display_phone": "+1-206-504-0202",
         "rating_img_url_large": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
         "id": "los-agaves-seattle", "is_closed": false, "rating_img_url_small": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png"},
         {"is_claimed": false, "distance": 2218.4569790199571, "mobile_url": "http://m.yelp.com/biz/14-carrot-taco-stand-seattle",
         "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
-        "review_count": 15, "name": "14 Carrot Taco Stand", "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/YgMQTaW3zrnGcJfeCkcSuQ/ms.jpg",
+        "review_count": 16, "name": "14 Carrot Taco Stand", "snippet_image_url": "http://s3-media1.ak.yelpcdn.com/photo/YgMQTaW3zrnGcJfeCkcSuQ/ms.jpg",
         "rating": 5.0, "url": "http://www.yelp.com/biz/14-carrot-taco-stand-seattle",
         "snippet_text": "Simply put... I love this place. Best tacos around. It''s
         tough to compete as the little guy with so many great restaurants in the neighborhood.
@@ -136,7 +136,50 @@ http_interactions:
         Ave E", "(b/t Lynn St \u0026 Louisa St)", "Eastlake", "Seattle, WA 98102"],
         "neighborhoods": ["Eastlake"], "postal_code": "98102", "country_code": "US",
         "address": ["2305 Eastlake Ave E"], "state_code": "WA"}}, {"is_claimed": false,
-        "distance": 1739.0410190790622, "mobile_url": "http://m.yelp.com/biz/taco-city-usa-seattle",
+        "distance": 1567.2955451272046, "mobile_url": "http://m.yelp.com/biz/taqueria-el-primo-everett",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 11, "name": "Taqueria El Primo", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/_yZs2DvpsLlxAScuELCo_Q/ms.jpg",
+        "rating": 4.0, "url": "http://www.yelp.com/biz/taqueria-el-primo-everett",
+        "snippet_text": "I was pleasantly surprised by this place.  I ordered a Carnitas
+        Torta and a chicken taco. They both exceeded my expectations.  The tacos are
+        street tacos....", "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/xSmd4vQ5allS4R6Fpi0fyw/ms.jpg",
+        "categories": [["Mexican", "mexican"]], "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "taqueria-el-primo-everett", "is_closed": false, "location": {"city":
+        "Everett", "display_address": ["1530 Broadway Ave", "Capitol Hill", "Everett,
+        WA 98201"], "neighborhoods": ["Capitol Hill"], "postal_code": "98201", "country_code":
+        "US", "address": ["1530 Broadway Ave"], "state_code": "WA"}}, {"is_claimed":
+        true, "distance": 1150.6503270431372, "mobile_url": "http://m.yelp.com/biz/the-saint-seattle",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 288, "name": "The Saint", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/dVD-i7IpY0lFZCePQVyBKQ/ms.jpg",
+        "rating": 4.0, "url": "http://www.yelp.com/biz/the-saint-seattle", "location":
+        {"cross_streets": "Bellevue Ave \u0026 14th Ave", "city": "Seattle", "display_address":
+        ["1416 E Olive Way", "(b/t Bellevue Ave \u0026 14th Ave)", "Capitol Hill",
+        "Seattle, WA 98122"], "neighborhoods": ["Capitol Hill"], "postal_code": "98122",
+        "country_code": "US", "address": ["1416 E Olive Way"], "state_code": "WA"},
+        "menu_date_updated": 1387643961, "phone": "2063239922", "snippet_text": "One
+        of my favorite bars in Capitol Hill. The place with the its matador themed
+        decor, triangle shaped building, sea foam painted walls, array of tequila...",
+        "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/vN-7QoJINKRfoW1tc_sVwQ/ms.jpg",
+        "categories": [["Mexican", "mexican"], ["Bars", "bars"]], "display_phone":
+        "+1-206-323-9922", "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "menu_provider": "single_platform", "id": "the-saint-seattle", "is_closed":
+        false, "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
+        {"is_claimed": false, "distance": 2309.6279934613713, "mobile_url": "http://m.yelp.com/biz/off-the-rez-seattle",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 81, "name": "Off The Rez", "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/KpJeMbN1r2s6HweYM6qzqA/ms.jpg",
+        "rating": 4.0, "url": "http://www.yelp.com/biz/off-the-rez-seattle", "location":
+        {"city": "Seattle", "display_address": ["Downtown", "Seattle, WA 98101"],
+        "neighborhoods": ["Downtown"], "postal_code": "98101", "country_code": "US",
+        "address": [], "state_code": "WA"}, "phone": "2064148226", "snippet_text":
+        "WOW! This is the best food truck in Seattle, by far. I love Native American
+        food and there aren''t many other places in the state of Washington, let alone...",
+        "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/PgffZUDjVHZPf48qx_znmQ/ms.jpg",
+        "categories": [["American (New)", "newamerican"], ["Food Stands", "foodstands"],
+        ["Food Trucks", "foodtrucks"]], "display_phone": "+1-206-414-8226", "rating_img_url_large":
+        "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "off-the-rez-seattle", "is_closed": false, "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
+        {"is_claimed": false, "distance": 1739.0410190790622, "mobile_url": "http://m.yelp.com/biz/taco-city-usa-seattle",
         "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
         "review_count": 16, "name": "Taco City USA", "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/iSBjW_nPZaWWxo7yS4y8dA/ms.jpg",
         "rating": 3.5, "url": "http://www.yelp.com/biz/taco-city-usa-seattle", "location":
@@ -151,20 +194,23 @@ http_interactions:
         "+1-206-769-0805", "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
         "id": "taco-city-usa-seattle", "is_closed": false, "rating_img_url_small":
         "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png"},
-        {"is_claimed": false, "distance": 1567.2955451272046, "mobile_url": "http://m.yelp.com/biz/taqueria-el-primo-everett",
-        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "review_count": 11, "name": "Taqueria El Primo", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/_yZs2DvpsLlxAScuELCo_Q/ms.jpg",
-        "rating": 4.0, "url": "http://www.yelp.com/biz/taqueria-el-primo-everett",
-        "snippet_text": "I was pleasantly surprised by this place.  I ordered a Carnitas
-        Torta and a chicken taco. They both exceeded my expectations.  The tacos are
-        street tacos....", "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/xSmd4vQ5allS4R6Fpi0fyw/ms.jpg",
-        "categories": [["Mexican", "mexican"]], "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
-        "id": "taqueria-el-primo-everett", "is_closed": false, "location": {"city":
-        "Everett", "display_address": ["1530 Broadway Ave", "Capitol Hill", "Everett,
-        WA 98201"], "neighborhoods": ["Capitol Hill"], "postal_code": "98201", "country_code":
-        "US", "address": ["1530 Broadway Ave"], "state_code": "WA"}}, {"is_claimed":
-        true, "distance": 2510.6427892060919, "mobile_url": "http://m.yelp.com/biz/el-borracho-seattle",
+        {"is_claimed": false, "distance": 2668.4427047170511, "mobile_url": "http://m.yelp.com/biz/tacos-de-la-noche-seattle",
+        "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+        "review_count": 6, "name": "Tacos de La Noche", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/cc4afe21892e/default_avatars/user_medium_square.png",
+        "rating": 5.0, "url": "http://www.yelp.com/biz/tacos-de-la-noche-seattle",
+        "location": {"cross_streets": "Western Ave \u0026 1st Ave", "city": "Seattle",
+        "display_address": ["90 Blanchard St", "(b/t Western Ave \u0026 1st Ave)",
+        "Belltown", "Seattle, WA 98121"], "neighborhoods": ["Belltown"], "postal_code":
+        "98121", "country_code": "US", "address": ["90 Blanchard St"], "state_code":
+        "WA"}, "phone": "2064865663", "snippet_text": "I absolutely love this place,
+        but I noticed they changed the name and it looks like it is under new management?
+        Also noticed that they didn''t have all the...", "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/KmejOnGQj6beI6SMMiGk0w/ms.jpg",
+        "categories": [["Mexican", "mexican"], ["Street Vendors", "streetvendors"],
+        ["Food Stands", "foodstands"]], "display_phone": "+1-206-486-5663", "rating_img_url_large":
+        "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
+        "id": "tacos-de-la-noche-seattle", "is_closed": false, "rating_img_url_small":
+        "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png"},
+        {"is_claimed": true, "distance": 2510.6427892060919, "mobile_url": "http://m.yelp.com/biz/el-borracho-seattle",
         "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
         "review_count": 71, "name": "El Borracho", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/mQ2kCA8AXfyONz9mmZ9sWA/ms.jpg",
         "rating": 4.0, "url": "http://www.yelp.com/biz/el-borracho-seattle", "location":
@@ -178,23 +224,9 @@ http_interactions:
         "categories": [["Mexican", "mexican"], ["Vegan", "vegan"], ["Bars", "bars"]],
         "display_phone": "+1-206-538-0440", "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
         "id": "el-borracho-seattle", "is_closed": false, "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
-        {"is_claimed": false, "distance": 2309.6279934613713, "mobile_url": "http://m.yelp.com/biz/off-the-rez-seattle",
-        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "review_count": 81, "name": "Off The Rez", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/Zf40GSqvndrsvQMofHy59w/ms.jpg",
-        "rating": 4.0, "url": "http://www.yelp.com/biz/off-the-rez-seattle", "location":
-        {"city": "Seattle", "display_address": ["Downtown", "Seattle, WA 98101"],
-        "neighborhoods": ["Downtown"], "postal_code": "98101", "country_code": "US",
-        "address": [], "state_code": "WA"}, "phone": "2064148226", "snippet_text":
-        "So I had no idea which food truck was in front of me when I went up to this
-        one and randomly ordered food. Don''t get me wrong -- I had heard of \"Off
-        The...", "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/PgffZUDjVHZPf48qx_znmQ/ms.jpg",
-        "categories": [["American (New)", "newamerican"], ["Food Stands", "foodstands"],
-        ["Food Trucks", "foodtrucks"]], "display_phone": "+1-206-414-8226", "rating_img_url_large":
-        "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
-        "id": "off-the-rez-seattle", "is_closed": false, "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
         {"is_claimed": true, "distance": 3292.353848762968, "mobile_url": "http://m.yelp.com/biz/blue-water-taco-grill-seattle-7",
         "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "review_count": 142, "name": "Blue Water Taco Grill", "snippet_image_url":
+        "review_count": 141, "name": "Blue Water Taco Grill", "snippet_image_url":
         "http://s3-media4.ak.yelpcdn.com/photo/OQMJRyyiFKOcVPR6RZsE-A/ms.jpg", "rating":
         4.0, "url": "http://www.yelp.com/biz/blue-water-taco-grill-seattle-7", "location":
         {"city": "Seattle", "display_address": ["515 Queen Anne Ave N", "Lower Queen
@@ -224,52 +256,51 @@ http_interactions:
         "display_phone": "+1-206-261-1370", "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
         "id": "taqueria-latinos-ii-seattle", "is_closed": false, "rating_img_url_small":
         "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
-        {"is_claimed": true, "distance": 1150.6503270431372, "mobile_url": "http://m.yelp.com/biz/the-saint-seattle",
+        {"is_claimed": true, "distance": 956.90312698608489, "mobile_url": "http://m.yelp.com/biz/poquitos-seattle",
+        "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 538, "name": "Poquitos", "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/L0re3MKG5UpOA1Sw9fOhgg/ms.jpg",
+        "rating": 3.5, "url": "http://www.yelp.com/biz/poquitos-seattle", "location":
+        {"cross_streets": "11th Ave \u0026 10th Ave", "city": "Seattle", "display_address":
+        ["1000 E Pike St", "(b/t 11th Ave \u0026 10th Ave)", "Capitol Hill", "Seattle,
+        WA 98122"], "neighborhoods": ["Capitol Hill"], "postal_code": "98122", "country_code":
+        "US", "address": ["1000 E Pike St"], "state_code": "WA"}, "phone": "2064534216",
+        "snippet_text": "So unique and so worth the trip into Seattle to kick start
+        the night off for a bachelorette party.\n\nNo one complained about what they
+        had to eat and all six...", "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/A8Lrr99wlf30NcPQGXL6ZA/ms.jpg",
+        "categories": [["Mexican", "mexican"]], "display_phone": "+1-206-453-4216",
+        "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "id": "poquitos-seattle", "is_closed": false, "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png"},
+        {"is_claimed": true, "distance": 1112.1539779449392, "mobile_url": "http://m.yelp.com/biz/fog%C3%B3n-cocina-mexicana-seattle-2",
         "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "review_count": 287, "name": "The Saint", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/dVD-i7IpY0lFZCePQVyBKQ/ms.jpg",
-        "rating": 4.0, "url": "http://www.yelp.com/biz/the-saint-seattle", "location":
-        {"cross_streets": "Bellevue Ave \u0026 14th Ave", "city": "Seattle", "display_address":
-        ["1416 E Olive Way", "(b/t Bellevue Ave \u0026 14th Ave)", "Capitol Hill",
-        "Seattle, WA 98122"], "neighborhoods": ["Capitol Hill"], "postal_code": "98122",
-        "country_code": "US", "address": ["1416 E Olive Way"], "state_code": "WA"},
-        "menu_date_updated": 1387643961, "phone": "2063239922", "snippet_text": "One
-        of my favorite bars in Capitol Hill. The place with the its matador themed
-        decor, triangle shaped building, sea foam painted walls, array of tequila...",
-        "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/vN-7QoJINKRfoW1tc_sVwQ/ms.jpg",
-        "categories": [["Mexican", "mexican"], ["Bars", "bars"]], "display_phone":
-        "+1-206-323-9922", "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
-        "menu_provider": "single_platform", "id": "the-saint-seattle", "is_closed":
-        false, "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
-        {"is_claimed": false, "distance": 1945.8598375559691, "mobile_url": "http://m.yelp.com/biz/toi-taco-seattle",
-        "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
-        "review_count": 29, "name": "Toi Taco", "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/nQbgcAxl_uaWFynlpP6GfA/ms.jpg",
-        "rating": 3.0, "url": "http://www.yelp.com/biz/toi-taco-seattle", "location":
-        {"cross_streets": "Blanchard St \u0026 9th Ave", "city": "Seattle", "display_address":
-        ["2134 Westlake Ave", "(b/t Blanchard St \u0026 9th Ave)", "Denny Triangle",
-        "Seattle, WA 98121"], "neighborhoods": ["Denny Triangle"], "postal_code":
-        "98121", "country_code": "US", "address": ["2134 Westlake Ave"], "state_code":
-        "WA"}, "phone": "2066235936", "snippet_text": "Toi Taco is my go to when I
-        am venturing to the other office building or its a nice day out and I want
-        to walk back up the Denny hill.\n\nI really like their...", "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/FbmOGI__jLwSeYJ6Zg6uuQ/ms.jpg",
-        "categories": [["Asian Fusion", "asianfusion"], ["Korean", "korean"], ["Mexican",
-        "mexican"]], "display_phone": "+1-206-623-5936", "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
-        "id": "toi-taco-seattle", "is_closed": false, "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png"},
-        {"is_claimed": true, "distance": 1562.7026673212904, "mobile_url": "http://m.yelp.com/biz/blue-water-taco-grill-seattle-3",
-        "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
-        "review_count": 30, "name": "Blue Water Taco Grill", "snippet_image_url":
-        "http://s3-media4.ak.yelpcdn.com/photo/G0Vi79XEPgnlnTFscMM2Fg/ms.jpg", "rating":
-        3.0, "url": "http://www.yelp.com/biz/blue-water-taco-grill-seattle-3", "location":
-        {"cross_streets": "Summit Ave \u0026 Minor Ave", "city": "Seattle", "display_address":
-        ["1213 Madison St", "(b/t Summit Ave \u0026 Minor Ave)", "First Hill", "Seattle,
-        WA 98104"], "neighborhoods": ["First Hill"], "postal_code": "98104", "country_code":
-        "US", "address": ["1213 Madison St"], "state_code": "WA"}, "menu_date_updated":
-        1387634809, "phone": "2068387398", "snippet_text": "I perfer this place over
-        taco del mar. The food tasted awesome, fresh and spicy. very limited parking
-        behind. From reading the previous reviews i didnt have...", "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/4gfNy-q8HVqoTUgjO4gLgA/ms.jpg",
-        "categories": [["Mexican", "mexican"]], "display_phone": "+1-206-838-7398",
-        "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
-        "menu_provider": "single_platform", "id": "blue-water-taco-grill-seattle-3",
-        "is_closed": false, "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png"},
+        "review_count": 206, "name": "Fog\u00f3n Cocina Mexicana", "snippet_image_url":
+        "http://s3-media2.ak.yelpcdn.com/photo/4LUYE4QjUbh4r7i2noAj9g/ms.jpg", "rating":
+        4.0, "url": "http://www.yelp.com/biz/fog%C3%B3n-cocina-mexicana-seattle-2",
+        "location": {"cross_streets": "Boylston Ave \u0026 Belmont Ave", "city": "Seattle",
+        "display_address": ["600 E Pine St", "(b/t Boylston Ave \u0026 Belmont Ave)",
+        "Capitol Hill", "Seattle, WA 98122"], "neighborhoods": ["Capitol Hill"], "postal_code":
+        "98122", "country_code": "US", "address": ["600 E Pine St"], "state_code":
+        "WA"}, "phone": "2063207777", "snippet_text": "Happy hour is great! 3-6 \u0026
+        9-close. \nHalf order nachos is still large. \nTortilla soup is the bomb!!\n\nI
+        always get these and sangria too!\n\nTry the...", "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/kSBxkoDO-gm3OwiqcYVnFA/ms.jpg",
+        "categories": [["Mexican", "mexican"]], "display_phone": "+1-206-320-7777",
+        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "fog\u00f3n-cocina-mexicana-seattle-2", "is_closed": false, "rating_img_url_small":
+        "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
+        {"is_claimed": true, "distance": 3518.2970547108575, "mobile_url": "http://m.yelp.com/biz/el-cami%C3%B3n-seattle-6",
+        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "review_count": 91, "name": "El Cami\u00f3n", "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/Oji9UuJYea4VdpKKlBsyMA/ms.jpg",
+        "rating": 4.0, "url": "http://www.yelp.com/biz/el-cami%C3%B3n-seattle-6",
+        "location": {"cross_streets": "Railroad Way", "city": "Seattle", "display_address":
+        ["1021 Occidental Ave", "(b/t Railroad Way)", "SoDo", "Seattle, WA 98134"],
+        "neighborhoods": ["SoDo"], "postal_code": "98134", "country_code": "US", "address":
+        ["1021 Occidental Ave"], "state_code": "WA"}, "phone": "2066590236", "snippet_text":
+        "The Gordita with carne asada was good but the one with pork was mouthwatering
+        and it gave me a food buzz... Eyes watering with tears of joy, soft humming
+        in...", "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/5iKmVzURgvGJb2zjY-SJRg/ms.jpg",
+        "categories": [["Mexican", "mexican"], ["Food Trucks", "foodtrucks"]], "display_phone":
+        "+1-206-659-0236", "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "el-cami\u00f3n-seattle-6", "is_closed": false, "rating_img_url_small":
+        "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
         {"is_claimed": false, "distance": 5838.0258541565217, "mobile_url": "http://m.yelp.com/biz/tacos-el-asadero-seattle-2",
         "rating_img_url": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
         "review_count": 193, "name": "Tacos El Asadero", "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/8aIbee8dGFeomFWNuOMDCw/ms.jpg",
@@ -285,68 +316,38 @@ http_interactions:
         "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
         "id": "tacos-el-asadero-seattle-2", "is_closed": false, "rating_img_url_small":
         "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png"},
-        {"is_claimed": false, "distance": 2668.4427047170511, "mobile_url": "http://m.yelp.com/biz/tacos-de-la-noche-seattle",
-        "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
-        "review_count": 6, "name": "Tacos de La Noche", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/cc4afe21892e/default_avatars/user_medium_square.png",
-        "rating": 5.0, "url": "http://www.yelp.com/biz/tacos-de-la-noche-seattle",
-        "location": {"cross_streets": "Western Ave \u0026 1st Ave", "city": "Seattle",
-        "display_address": ["90 Blanchard St", "(b/t Western Ave \u0026 1st Ave)",
-        "Belltown", "Seattle, WA 98121"], "neighborhoods": ["Belltown"], "postal_code":
-        "98121", "country_code": "US", "address": ["90 Blanchard St"], "state_code":
-        "WA"}, "phone": "2064865663", "snippet_text": "I absolutely love this place,
-        but I noticed they changed the name and it looks like it is under new management?
-        Also noticed that they didn''t have all the...", "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/KmejOnGQj6beI6SMMiGk0w/ms.jpg",
-        "categories": [["Mexican", "mexican"], ["Street Vendors", "streetvendors"],
-        ["Food Stands", "foodstands"]], "display_phone": "+1-206-486-5663", "rating_img_url_large":
-        "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png",
-        "id": "tacos-de-la-noche-seattle", "is_closed": false, "rating_img_url_small":
-        "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png"},
-        {"is_claimed": false, "distance": 4488.8545347859535, "mobile_url": "http://m.yelp.com/biz/rancho-bravo-tacos-seattle",
+        {"is_claimed": true, "distance": 3908.6187342384324, "mobile_url": "http://m.yelp.com/biz/guanacos-tacos-pupuseria-seattle",
         "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "review_count": 323, "name": "Rancho Bravo Tacos", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/rMEX0KDYNka4waK961UnfQ/ms.jpg",
-        "rating": 4.0, "url": "http://www.yelp.com/biz/rancho-bravo-tacos-seattle",
-        "snippet_text": "Best taco truck in Seattle, nothing out of the ordinary as
-        far as the menu goes it''s pretty standar but the food is wonderful. Tacos
-        are perfect, good salsa...", "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/rSRncDlmLDUce9h_xnGuiA/ms.jpg",
-        "categories": [["Mexican", "mexican"], ["Food Trucks", "foodtrucks"], ["Sandwiches",
-        "sandwiches"]], "rating_img_url_small": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-        "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
-        "id": "rancho-bravo-tacos-seattle", "is_closed": false, "location": {"cross_streets":
-        "N Thackeray Pl \u0026 N 2nd Ave", "city": "Seattle", "display_address": ["211
-        NE 45th St", "(b/t N Thackeray Pl \u0026 N 2nd Ave)", "Wallingford", "Seattle,
-        WA 98105"], "neighborhoods": ["Wallingford"], "postal_code": "98105", "country_code":
-        "US", "address": ["211 NE 45th St"], "state_code": "WA"}}, {"is_claimed":
-        true, "distance": 3518.2970547108575, "mobile_url": "http://m.yelp.com/biz/el-cami%C3%B3n-seattle-6",
-        "rating_img_url": "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "review_count": 91, "name": "El Cami\u00f3n", "snippet_image_url": "http://s3-media3.ak.yelpcdn.com/photo/Oji9UuJYea4VdpKKlBsyMA/ms.jpg",
-        "rating": 4.0, "url": "http://www.yelp.com/biz/el-cami%C3%B3n-seattle-6",
-        "location": {"cross_streets": "Railroad Way", "city": "Seattle", "display_address":
-        ["1021 Occidental Ave", "(b/t Railroad Way)", "SoDo", "Seattle, WA 98134"],
-        "neighborhoods": ["SoDo"], "postal_code": "98134", "country_code": "US", "address":
-        ["1021 Occidental Ave"], "state_code": "WA"}, "phone": "2066590236", "snippet_text":
-        "The Gordita with carne asada was good but the one with pork was mouthwatering
-        and it gave me a food buzz... Eyes watering with tears of joy, soft humming
-        in...", "image_url": "http://s3-media4.ak.yelpcdn.com/bphoto/5iKmVzURgvGJb2zjY-SJRg/ms.jpg",
-        "categories": [["Mexican", "mexican"], ["Food Trucks", "foodtrucks"]], "display_phone":
-        "+1-206-659-0236", "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
-        "id": "el-cami\u00f3n-seattle-6", "is_closed": false, "rating_img_url_small":
+        "review_count": 177, "name": "Guanaco''s Tacos Pupuseria", "snippet_image_url":
+        "http://s3-media3.ak.yelpcdn.com/photo/JeSudasXpg5T0b24h2x3gg/ms.jpg", "rating":
+        4.0, "url": "http://www.yelp.com/biz/guanacos-tacos-pupuseria-seattle", "location":
+        {"cross_streets": "42nd St \u0026 41st St", "city": "Seattle", "display_address":
+        ["4106 Brooklyn Ave NE", "Ste 102A", "(b/t 42nd St \u0026 41st St)", "University
+        District", "Seattle, WA 98105"], "neighborhoods": ["University District"],
+        "postal_code": "98105", "country_code": "US", "address": ["4106 Brooklyn Ave
+        NE", "Ste 102A"], "state_code": "WA"}, "phone": "2065472369", "snippet_text":
+        "I popped my pupusa cherry here. I will definitely do them again, just come
+        into my mouth, anytime...\n\nGreat service! The guy who worked here was so
+        nice and...", "image_url": "http://s3-media2.ak.yelpcdn.com/bphoto/UxeHyBBPn_xCxKGBJkNJvw/ms.jpg",
+        "categories": [["Mexican", "mexican"], ["Salvadoran", "salvadoran"]], "display_phone":
+        "+1-206-547-2369", "rating_img_url_large": "http://s3-media2.ak.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+        "id": "guanacos-tacos-pupuseria-seattle", "is_closed": false, "rating_img_url_small":
         "http://s3-media4.ak.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png"},
-        {"is_claimed": false, "distance": 1536.5774121030149, "mobile_url": "http://m.yelp.com/biz/taco-del-mar-seattle",
-        "rating_img_url": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
-        "review_count": 19, "name": "Taco Del Mar", "snippet_image_url": "http://s3-media4.ak.yelpcdn.com/photo/XadgzCrO1JoT8UDEo4ItFw/ms.jpg",
-        "rating": 3.0, "url": "http://www.yelp.com/biz/taco-del-mar-seattle", "location":
-        {"cross_streets": "N Minor Ave \u0026 N Fairview Ave", "city": "Seattle",
-        "display_address": ["1165 Harrison St", "(b/t N Minor Ave \u0026 N Fairview
-        Ave)", "South Lake Union", "Seattle, WA 98109"], "neighborhoods": ["South
-        Lake Union"], "postal_code": "98109", "country_code": "US", "address": ["1165
-        Harrison St"], "state_code": "WA"}, "menu_date_updated": 1387605383, "phone":
-        "2066242114", "snippet_text": "Okay, I can''t in any good conscience give
-        a 5 star review for fast-ish food, but I have to say the service here is 5
-        stars, the value ratio is also 5...", "image_url": "http://s3-media3.ak.yelpcdn.com/bphoto/f-c0hsVbkteLKhonbVDmWQ/ms.jpg",
-        "categories": [["Mexican", "mexican"], ["Fast Food", "hotdogs"]], "display_phone":
-        "+1-206-624-2114", "rating_img_url_large": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
-        "menu_provider": "single_platform", "id": "taco-del-mar-seattle", "is_closed":
-        false, "rating_img_url_small": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png"}]}'
+        {"is_claimed": false, "distance": 715.25231028686107, "mobile_url": "http://m.yelp.com/biz/el-gallito-seattle",
+        "rating_img_url": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+        "review_count": 100, "name": "El Gallito", "snippet_image_url": "http://s3-media2.ak.yelpcdn.com/photo/u2YRP8_-YQxnQNd5QOALsg/ms.jpg",
+        "rating": 3.5, "url": "http://www.yelp.com/biz/el-gallito-seattle", "location":
+        {"cross_streets": "Madison St \u0026 Olive St", "city": "Seattle", "display_address":
+        ["1700 20th Ave", "(b/t Madison St \u0026 Olive St)", "Capitol Hill", "Seattle,
+        WA 98122"], "neighborhoods": ["Capitol Hill"], "postal_code": "98122", "country_code":
+        "US", "address": ["1700 20th Ave"], "state_code": "WA"}, "menu_date_updated":
+        1387495514, "phone": "2063298088", "snippet_text": "Truly a little hole-in-the-wall,
+        El Gallito is a family-run restaurant with several items on the menu that
+        are really authentic. \n\nThe \"Mexican Wedding...", "image_url": "http://s3-media1.ak.yelpcdn.com/bphoto/TfRAp-q9ugO9Z61crB8LQg/ms.jpg",
+        "categories": [["Mexican", "mexican"]], "display_phone": "+1-206-329-8088",
+        "rating_img_url_large": "http://s3-media3.ak.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+        "menu_provider": "single_platform", "id": "el-gallito-seattle", "is_closed":
+        false, "rating_img_url_small": "http://s3-media1.ak.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png"}]}'
     http_version: 
-  recorded_at: Sun, 16 Mar 2014 05:36:22 GMT
+  recorded_at: Wed, 19 Mar 2014 02:36:07 GMT
 recorded_with: VCR 2.8.0
