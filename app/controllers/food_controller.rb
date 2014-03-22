@@ -11,3 +11,6 @@ class FoodController < ApplicationController
 end
 
 # HTTParty.post("http://localhost:3000/taco.json", body: options.to_json, headers: {'Content-Type' => 'application/json'})
+
+# HTTParty.post("http://taco911.me/taco.json", body: options.to_json, headers: {'Content-Type' => 'application/json'})
+
