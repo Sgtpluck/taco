@@ -1,6 +1,6 @@
 class FoodFinder
   include Yelp::V2::Search::Request
-  attr_accessor :location_and_type_hash, :food
+  attr_accessor :location_and_type_hash
 
   def initialize(location_and_type_hash)
     @location_and_type_hash = location_and_type_hash
@@ -22,6 +22,6 @@ class FoodFinder
   end
 
   def closest
-    sorted_yelp_response.first
+    sorted_yelp_response.first 
   end
 end

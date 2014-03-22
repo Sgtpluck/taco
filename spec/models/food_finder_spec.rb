@@ -6,6 +6,8 @@ describe FoodFinder do
     let(:tacos) {FoodFinder.new({ latitude: 47.622,
                                   longitude: -122.313,
                                   food: 'tacos' }) }
+    let(:bad_request) {FoodFinder.new({  longitude: -122.313,
+                                  food: 'tacos' }) }
   
     describe 'client' do
       it 'should create a Yelp Client object' do
@@ -32,7 +34,7 @@ describe FoodFinder do
     end
 
     describe 'closest' do
-      it 'should return the first element of the sorted array' do
+      it 'should return the first element of the sorted array if there is at least one response from yelp' do
         response = VCR.use_cassette 'taco' do
            tacos.sorted_yelp_response
          end
@@ -41,6 +43,13 @@ describe FoodFinder do
           end
 
         expect(close_taco).to eq response.first
+      end
+
+      it 'should return an apology if there are not tacos found via the search' do
+        response = VCR.use_cassette 'error' do
+            bad_request.sorted_yelp_response
+          end
+        expect(response).to eq "Sorry, I can't find any tacos for you."
       end
     end
   end
