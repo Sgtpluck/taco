@@ -20,3 +20,4 @@
 
 # ignore coverage files
 /coverage
+/fixture
