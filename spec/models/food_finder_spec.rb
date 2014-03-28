@@ -33,6 +33,16 @@ describe FoodFinder do
       end
     end
 
+    describe 'sorted_google_response' do
+      it 'should return a hash' do
+        tacos.sorted_google_response
+
+        expect(response).to be_an_instance_of Hash
+      end
+    end
+
+    # HTTParty.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=47.608964,-122.3333698&rankby=distance&types=food&keyword=tacos&sensor=true&opennow&key=AIzaSyBs3yn45Lj_2IEoL_LDA1LZ-Z5YHCq8BFs")
+
     describe 'closest' do
       it 'should return the first element of the sorted array if there is at least one response from yelp' do
         response = VCR.use_cassette 'taco' do
