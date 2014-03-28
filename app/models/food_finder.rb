@@ -29,6 +29,6 @@ class FoodFinder
   end
 
   def sorted_google_response
-    HTTParty.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{@latitude},-#{@longitude}&rankby=distance&types=food&keyword=#{@term}&sensor=true&opennow&key=#{Figaro.env.google_places}")
+    HTTParty.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{@latitude},-#{@longitude}&rankby=distance&types=food&keyword=#{@term}&sensor=true&opennow&key=#{Figaro.env.google_places}")['results']
   end
 end
