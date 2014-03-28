@@ -35,7 +35,9 @@ describe FoodFinder do
 
     describe 'sorted_google_response' do
       it 'should return a hash' do
-        tacos.sorted_google_response
+        response = VCR.use_cassette 'google_places' do
+          tacos.sorted_google_response
+        end
 
         expect(response).to be_an_instance_of Hash
       end
