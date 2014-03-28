@@ -59,11 +59,19 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
     ffi (1.9.3)
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
     formatador (0.2.4)
+    foursquare2 (1.9.8)
+      faraday (~> 0.8)
+      faraday_middleware (>= 0.8)
+      hashie (>= 1.0, < 3.0.0)
     guard (2.5.1)
       formatador (>= 0.2.4)
       listen (~> 2.6)
@@ -73,6 +81,7 @@ GEM
     guard-rspec (4.2.8)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
+    hashie (2.0.5)
     hike (1.2.3)
     httparty (0.13.0)
       json (~> 1.8)
@@ -99,6 +108,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.9.0)
     multi_xml (0.5.5)
+    multipart-post (1.2.0)
     nio4r (1.0.0)
     oauth (0.4.7)
     pg (0.17.1)
@@ -200,6 +210,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   factory_girl_rails
   figaro
+  foursquare2
   guard-rspec
   httparty
   jbuilder (~> 1.2)

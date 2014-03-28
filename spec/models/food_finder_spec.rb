@@ -45,6 +45,7 @@ describe FoodFinder do
         expect(close_taco).to eq response.first
       end
 
+      # pending until swap to Google Places API
       xit 'should return an apology if there are not tacos found via the search' do
         response = VCR.use_cassette 'error' do
             bad_request.sorted_yelp_response

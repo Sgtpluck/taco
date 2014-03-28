@@ -11,6 +11,9 @@ gem 'figaro'
 gem 'httparty'
 gem 'rails_12factor'
 
+# foursquare wrapper
+gem 'foursquare2'
+
 
 # yelp wrapper
 gem 'yelpster'
