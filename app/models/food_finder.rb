@@ -33,5 +33,6 @@ class FoodFinder
   end
 
   def closest_google
+    sorted_google_response.first
   end
 end

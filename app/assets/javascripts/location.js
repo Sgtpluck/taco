@@ -26,14 +26,12 @@ $(document).ready(function(){
             },
         success: function (data) {
           console.log(data);
-          restaurant_location = data.location.display_address;
-          closest.innerHTML = ("The closest tacos are at: " + data.name +
-                                "<br> They are located at " + restaurant_location.join(' ') +
+          closest.innerHTML = ("The closest tacos are at: " + data['name'] +
+                                "<br> They are located at " + data['vicinity'] +
                                 "<br> <a href='http://maps.google.com/?q&saddr=" +
                                   position.coords.latitude + "," +
                                   position.coords.longitude +
-                                  "&daddr=" + restaurant_location[0] + " " +
-                                  restaurant_location.slice(-1)[0] + "&dirflg=w'> Walking directions </a>");
+                                  "&daddr=" + data['vicinity'] + "&dirflg=w'> Walking directions </a>");
         }
       });
     }

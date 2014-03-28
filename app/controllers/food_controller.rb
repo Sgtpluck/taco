@@ -1,7 +1,7 @@
 class FoodController < ApplicationController
 
   def all_foods
-    @closest_food = FoodFinder.new(params).closest
+    @closest_food = FoodFinder.new(params).closest_google
 
     respond_to do |format|
       format.json { render json: @closest_food, status: :ok }
