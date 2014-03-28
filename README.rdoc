@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a taco emergency, okay?
 
-Things you may want to cover:
+Taco Emergency can be found at http://taco911.me.
 
-* Ruby version
+Currently, it takes the user's location data (when permission is granted) and uses it to query the Yelp API in order to find the closest taco place.
 
-* System dependencies
+Taco Emergency also is an API, so any of your apps can communicate with TE to receive data about the closest taco (or whatever) restaurant or store. Details about how to use the API are available at http://blog.lovecatually.com/ive-built-the-most-important-app-of-all-time. Please check them out.
 
-* Configuration
+Taco Emergency is constantly being worked on, so check back for improvements, including the new iPhone app.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Thanks for checking out my GitHub!
