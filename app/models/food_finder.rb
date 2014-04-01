@@ -1,5 +1,4 @@
 class FoodFinder
-  include Yelp::V2::Search::Request
   attr_accessor :longitude, :latitude, :term
 
   def initialize(location_and_type_hash)
