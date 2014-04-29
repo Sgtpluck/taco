@@ -1,5 +1,6 @@
 TacoEmergency::Application.routes.draw do
   root 'welcome#index'
+  get '/other', to: "welcome#other"
 
   post '/', to: "welcome#index"
 

@@ -1,22 +1,19 @@
 $(document).ready(function(){
   $('input.location').click(function (e) {
     e.preventDefault();
-    var url = document.querySelector('form.button_to').action;
-    var lon = document.querySelector('.long');
-    var lat = document.querySelector('.lat');
-    var err = document.querySelector('.error');
-    var closest = document.querySelector('.closest');
+    var url = $('form.button_to').attr('action');
+    var err = $('.error');
+    var closest = $('.closest');
     {
-    if (navigator.geolocation)
-      {
-      navigator.geolocation.getCurrentPosition(findPosition);
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(findPosition);
+        }
+      else {
+        err.append("Geolocation is not supported by this browser.");
       }
-    else{err.innerHTML = "Geolocation is not supported by this browser.";}
     }
-  function findPosition(position) 
+  function findPosition(position)
     {
-    lat.innerHTML = "Latitude: " + position.coords.latitude;
-    lon.innerHTML = 'Longitude:' + position.coords.longitude;
     $.ajax({
         type: 'POST',
         url: url,
@@ -25,13 +22,17 @@ $(document).ready(function(){
             'longitude': position.coords.longitude,
             },
         success: function (data) {
-          console.log(data);
-          closest.innerHTML = ("The closest tacos are at: " + data['name'] +
-                                "<br> They are located at " + data['vicinity'] +
-                                "<br> <a href='http://maps.google.com/?q&saddr=" +
-                                  position.coords.latitude + "," +
-                                  position.coords.longitude +
-                                  "&daddr=" + data['vicinity'] + "&dirflg=w'> Walking directions </a>");
+          if (data == null) {
+            closest.append('Sorry, we cannot find any nearby tacos. Best of luck to you in this time of need.')
+          }
+          else {
+            closest.append("The closest tacos are at: " + data['name'] +
+                                  "<br> They are located at " + data['vicinity'] +
+                                  "<br> <a href='http://maps.google.com/?q&saddr=" +
+                                    position.coords.latitude + "," +
+                                    position.coords.longitude +
+                                    "&daddr=" + data['vicinity'] + "&dirflg=w'> Walking directions </a>");
+          }
         }
       });
     }
