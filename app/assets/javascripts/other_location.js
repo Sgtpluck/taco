@@ -1,9 +1,10 @@
 $(document).ready(function(){
-  $('input.location').click(function (e) {
+  $('input.other_search').click(function (e) {
     e.preventDefault();
-    var url = document.querySelector('form.button_to').action;
-    var err = document.querySelector('.error');
+    var url = $('#emergency').val();
+    var err = $('.error');
     var closest = $('.closest');
+    closest.empty();
     {
     if (navigator.geolocation)
       {
@@ -22,16 +23,15 @@ $(document).ready(function(){
             },
         success: function (data) {
           if (data == null) {
-            closest.append('Sorry, we cannot find any nearby tacos. Best of luck to you in this time of need.')
+            closest.append("SORRY, we can't find any restaurants serving " + url + ". We wish you all the best in your evening's adventures.")
           }
-          else {
-            closest.append("The closest tacos are at: " + data['name'] +
-                                  "<br> They are located at " + data['vicinity'] +
-                                  "<br> <a href='http://maps.google.com/?q&saddr=" +
-                                    position.coords.latitude + "," +
-                                    position.coords.longitude +
-                                    "&daddr=" + data['vicinity'] + "&dirflg=w'> Walking directions </a>");
-          }
+          console.log(data);
+          closest.append("The closest open restaurant is at: " + data['name'] +
+                                "<br> They are located at " + data['vicinity'] +
+                                "<br> <a href='http://maps.google.com/?q&saddr=" +
+                                  position.coords.latitude + "," +
+                                  position.coords.longitude +
+                                  "&daddr=" + data['vicinity'] + "&dirflg=w'> Walking directions </a>");
         }
       });
     }
