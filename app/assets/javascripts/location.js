@@ -1,15 +1,16 @@
 $(document).ready(function(){
   $('input.location').click(function (e) {
     e.preventDefault();
-    var url = document.querySelector('form.button_to').action;
-    var err = document.querySelector('.error');
+    var url = $('form.button_to').attr('action');
+    var err = $('.error');
     var closest = $('.closest');
     {
-    if (navigator.geolocation)
-      {
-      navigator.geolocation.getCurrentPosition(findPosition);
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(findPosition);
+        }
+      else {
+        err.append("Geolocation is not supported by this browser.");
       }
-    else{err.innerHTML = "Geolocation is not supported by this browser.";}
     }
   function findPosition(position)
     {
