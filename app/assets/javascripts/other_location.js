@@ -41,8 +41,4 @@ $(document).ready(function(){
     }
   });
 });
-
-// maps.google.com/?q=47.6229592&-122.3084003
-// maps.google.com/?q&saddr=47.6229592,-122.3084003&daddr=216 26th ave s seattle wa 98144&dirflg=w
-
  
