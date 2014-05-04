@@ -12,6 +12,16 @@ class FoodFinder
   end
 
   def closest_google
-    sorted_google_response.first
+    if curse_words?
+      return "Excuse me? That is not an appropriate request."
+    else
+      sorted_google_response.first
+    end
   end
+
+  def curse_words?
+    curses = CSV.read("./lib/cursewords.csv").first.each { |curse| curse.strip! }
+    curses.include? @term
+  end
+
 end

@@ -33,5 +33,20 @@ describe FoodFinder do
         expect(closest_taco). to eq response.first
       end
     end
+
+    describe 'curse_words?' do
+      it 'should return true if the query is a curse word' do
+        curse_request = FoodFinder.new({ latitude: 47.622,
+          longitude: -122.313,
+          path: 'fuck' })
+
+        expect(curse_request.curse_words?).to be true
+      end
+
+       it 'should return false if the query is clean' do
+
+        expect(tacos.curse_words?).to be false
+      end
+    end
   end
 end
