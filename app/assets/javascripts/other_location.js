@@ -10,7 +10,8 @@ $(document).ready(function(){
       {
       navigator.geolocation.getCurrentPosition(findPosition);
       }
-    else{err.innerHTML = "Geolocation is not supported by this browser.";}
+    else {
+      err.innerHTML = "Geolocation is not supported by this browser.";}
     }
   function findPosition(position)
     {
