@@ -24,10 +24,10 @@ $(document).ready(function(){
             },
         success: function (data) {
           if (data == null) {
-            closest.append("SORRY, we can't find any restaurants serving " + url + ". We wish you all the best in your evening's adventures.")
+            closest.append("SORRY, we can't find any restaurants serving " + url.replace(/\+/g," ") + ". We wish you all the best in your evening's adventures.")
           }
           if (data == 'curses'){
-            closest.append('Are you kidding? You thought "' + url + '" was an appropriate search? You should be ashamed of yourself. Go sleep it off.')
+            closest.append('Are you kidding? You thought "' + url.replace(/\+/g," ") + '" was an appropriate search? You should be ashamed of yourself. Go sleep it off.')
           }
           else {
             closest.append("The closest open restaurant is at: " + data['name'] +
