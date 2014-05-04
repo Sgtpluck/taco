@@ -26,13 +26,17 @@ $(document).ready(function(){
           if (data == null) {
             closest.append("SORRY, we can't find any restaurants serving " + url + ". We wish you all the best in your evening's adventures.")
           }
-          console.log(data);
-          closest.append("The closest open restaurant is at: " + data['name'] +
+          if (data == 'curses'){
+            closest.append('Are you kidding? You thought "' + url + '" was an appropriate search? You should be ashamed of yourself. Go sleep it off.')
+          }
+          else {
+            closest.append("The closest open restaurant is at: " + data['name'] +
                                 "<br> They are located at " + data['vicinity'] +
                                 "<br> <a href='http://maps.google.com/?q&saddr=" +
                                   position.coords.latitude + "," +
                                   position.coords.longitude +
                                   "&daddr=" + data['vicinity'] + "&dirflg=w'> Walking directions </a>");
+          }
         }
       });
     }

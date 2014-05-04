@@ -3,11 +3,14 @@ include Yelp::V2::Search::Request
 
 describe FoodFinder do
   describe 'methods' do
-    let(:tacos) {FoodFinder.new({ latitude: 47.622,
+    let(:tacos) { FoodFinder.new({ latitude: 47.622,
                                   longitude: -122.313,
-                                  term: 'tacos' }) }
-    let(:bad_request) {FoodFinder.new({  longitude: -122.313,
-                                  term: 'tacos' }) }
+                                  path: 'tacos' }) }
+    let(:bad_request) { FoodFinder.new({  longitude: -122.313,
+                                  path: 'tacos' }) }
+    let(:curse_request) { FoodFinder.new({ latitude: 47.622,
+          longitude: -122.313,
+          path: 'fuck' }) }
   
 
 
@@ -22,7 +25,7 @@ describe FoodFinder do
     end
 
     describe 'closest_google' do
-      it 'should return the first restaurant returned in the google places search' do
+      it 'should return the first restaurant returned in the google places search if the search is clean' do
         response = VCR.use_cassette 'google_places' do
           tacos.sorted_google_response
         end
@@ -36,9 +39,7 @@ describe FoodFinder do
 
     describe 'curse_words?' do
       it 'should return true if the query is a curse word' do
-        curse_request = FoodFinder.new({ latitude: 47.622,
-          longitude: -122.313,
-          path: 'fuck' })
+
 
         expect(curse_request.curse_words?).to be true
       end

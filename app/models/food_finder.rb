@@ -13,7 +13,7 @@ class FoodFinder
 
   def closest_google
     if curse_words?
-      return "Excuse me? That is not an appropriate request."
+      return "curses".to_json
     else
       sorted_google_response.first
     end
