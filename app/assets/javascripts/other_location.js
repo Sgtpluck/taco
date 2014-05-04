@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('input.other_search').click(function (e) {
     e.preventDefault();
-    var url = $('#emergency').val().replace(/\s/,"+");
+    var url = $('#emergency').val().replace(/\s/g,"+");
     var err = $('.error');
     var closest = $('.closest');
     closest.empty();
