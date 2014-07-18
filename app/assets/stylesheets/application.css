@@ -12,8 +12,35 @@
  *= require_tree .
  */
 
- .tacocat {
-    height: 15%;
-    width: 15%;
-    border-radius: 50%;
- }
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: .90em;
+  font-weight: 100;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.tacocat {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  border: solid;
+}
+
+.container {
+  text-align: center;
+}
+
+.location {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.closest {
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
