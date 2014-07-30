@@ -1,7 +1,9 @@
 <p> Are you having some other kind of emergency?
 <div class='error'></div>
+<div class= 'container'>
 <%= form_tag({}, class: 'other_form')%>
   <%= text_field_tag :emergency %>
   <%= submit_tag "Search", class: 'other_search' %>
+</div>
 <div class='closest'>
 </div>
