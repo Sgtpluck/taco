@@ -4,7 +4,6 @@ $(document).ready(function(){
     var url = $('#emergency').val().replace(/\s/g,"+");
     var err = $('.error');
     var closest = $('.closest');
-    closest.empty();
     {
     if (navigator.geolocation)
       {
@@ -23,13 +22,16 @@ $(document).ready(function(){
             'longitude': position.coords.longitude,
             },
         success: function (data) {
-          if (data == null) {
-            closest.append("SORRY, we can't find any restaurants serving " + url.replace(/\+/g," ") + ". We wish you all the best in your evening's adventures.")
+          if (data === null) {
+            closest.empty();
+            closest.append("SORRY, we can't find any restaurants serving " + url.replace(/\+/g," ") + ". We wish you all the best in your evening's adventures.");
           }
           if (data == 'curses'){
-            closest.append('Are you kidding? You thought "' + url.replace(/\+/g," ") + '" was an appropriate search? You should be ashamed of yourself. Go sleep it off.')
+            closest.empty();
+            closest.append('Are you kidding? You thought "' + url.replace(/\+/g," ") + '" was an appropriate search? You should be ashamed of yourself. Go sleep it off.');
           }
           else {
+            closest.empty();
             closest.append("The closest open restaurant is at: " + data['name'] +
                                 "<br> They are located at " + data['vicinity'] +
                                 "<br> <a href='http://maps.google.com/?q&saddr=" +

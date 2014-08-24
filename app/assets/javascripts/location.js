@@ -23,9 +23,11 @@ $(document).ready(function(){
             },
         success: function (data) {
           if (data == null) {
+            closest.empty();
             closest.append('Sorry, we cannot find any nearby tacos. Best of luck to you in this time of need.')
           }
           else {
+            closest.empty();
             closest.append("The closest tacos are at: " + data['name'] +
                                   "<br> They are located at " + data['vicinity'] +
                                   "<br> <a href='http://maps.google.com/?q&saddr=" +
@@ -42,8 +44,4 @@ $(document).ready(function(){
     }
   });
 });
-
-// maps.google.com/?q=47.6229592&-122.3084003
-// maps.google.com/?q&saddr=47.6229592,-122.3084003&daddr=216 26th ave s seattle wa 98144&dirflg=w
-
  

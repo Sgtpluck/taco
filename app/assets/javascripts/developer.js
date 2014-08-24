@@ -11,6 +11,5 @@ $(document).ready(function(){
       dt.setTime(dt.getTime() + ms);
       while (new Date().getTime() < dt.getTime());
       }
-
-    });
+  });
 });
