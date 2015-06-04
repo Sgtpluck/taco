@@ -226,3 +226,6 @@ DEPENDENCIES
   vcr
   webmock
   yelpster
+
+BUNDLED WITH
+   1.10.2

@@ -32,6 +32,10 @@ p {
   border: solid;
 }
 
+.social-media {
+  padding: 15px;
+}
+
 .container {
   text-align: center;
 }
